@@ -12,4 +12,4 @@ jobs:
       - name: Print PR number
         run: echo ${{ github.event.pull_request.number }}
       - name: Print PR status
-        run: echo ${{ github.event.pull_request.status }}
+        run: echo ${{ github.event.pull_request.state }}
