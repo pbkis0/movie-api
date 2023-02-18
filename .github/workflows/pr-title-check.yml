@@ -2,8 +2,7 @@ name: PR title check
 
 on:
   push:
-    pull_request:
-      branches: [ master ]
+    branches: [ master ]
 
 jobs:
   check:
