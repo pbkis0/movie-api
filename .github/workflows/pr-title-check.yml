@@ -1,0 +1,14 @@
+name: PR title check
+
+on:
+  pull_request:
+    branches: [ master ]
+    # types: [ opened, reopened, labeled, unlabeled ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Slashgear/action-check-pr-title@v3.0.0
+        with:
+          regexp: "^\\[((ABC)-[1-9][0-9]*|No Ticket)\\] - .*$"
