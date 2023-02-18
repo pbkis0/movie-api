@@ -8,6 +8,6 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: Slashgear/action-check-pr-title@v3.0.0
+      - uses: Slashgear/action-check-pr-title@v4.3.0
         with:
           regexp: "^\\[((ABC)-[1-9][0-9]*|No Ticket)\\] - .*$"
