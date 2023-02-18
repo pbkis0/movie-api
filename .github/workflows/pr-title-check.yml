@@ -3,6 +3,7 @@ name: PR title check
 on:
   pull_request:
     branches: [ master ]
+    types: [ edited ]
 
 jobs:
   check:
