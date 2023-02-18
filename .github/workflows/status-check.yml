@@ -1,0 +1,12 @@
+name: Check PR status
+
+on:
+  pull_request: [ master ]
+
+jobs:
+  runs-on: ubuntu-latest
+
+  Print PR number:
+    run: echo PR-${{ pull_request.number }}
+  Print PR status:
+    run: echo ${{ pull_request.status }}
