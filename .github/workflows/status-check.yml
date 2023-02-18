@@ -6,10 +6,10 @@ on:
     types: [ edited, opened, reopened, synchronize, labeled, unlabeled ]
 
 jobs:
-  Print PR details:
+  print_pr_details:
     runs-on: ubuntu-latest
     steps:
       - name: Print PR number
-      run: echo PR-${{ pull_request.number }}
+      run: echo ${{ pull_request.number }}
       - name: Print PR status
       run: echo ${{ pull_request.status }}
