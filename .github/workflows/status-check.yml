@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print PR number
-        run: echo ${{ pull_request.number }}
+        run: echo ${{ github.event.pull_request.number }}
       - name: Print PR status
-        run: echo ${{ pull_request.status }}
+        run: echo ${{ github.event.pull_request.status }}
